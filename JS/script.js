@@ -26,3 +26,8 @@ numberBtn.addEventListener("click",()=>{
     let x = Math.ceil(Math.random()*50)                // 1 theke 50 er moddhe random purno songkha generate korbe
     result.innerHTML = x;
 })
+
+
+let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/            // email check korar strict pattern/rules
+let email = "maksuda@gmail.com"                                               // jethay input email save kora hoise
+console.log(emailRegex.test(email))                                           // format thik thakle true, bhul thakle false dekhabe
