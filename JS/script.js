@@ -31,3 +31,18 @@ numberBtn.addEventListener("click",()=>{
 let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/            // email check korar strict pattern/rules
 let email = "maksuda@gmail.com"                                               // jethay input email save kora hoise
 console.log(emailRegex.test(email))                                           // format thik thakle true, bhul thakle false dekhabe
+
+// ================================ JS Errors ================================
+
+let x = 5;
+let y = 10;
+try {
+  x = y + 1;
+  console.log(x);
+} catch(err) {
+  let text = err.name;
+  console.log(text);
+}
+finally{
+    console.log("thanks");
+}
